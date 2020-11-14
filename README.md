@@ -8,3 +8,6 @@ Distinguished teacher at the Illinois Math and Science Academy, he cannot see.
 
 ## Project Co-Head - Dr. Michael Woodley
 Distinguished CS126 Prof, known for showing that UIUC > OSU
+
+## Project Co-Head - Mr. Louis Rossmann
+Distinguished Macbook Repairman, because something always goes wrong during a hackathon
