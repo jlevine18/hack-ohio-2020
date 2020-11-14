@@ -4,3 +4,7 @@ Distinguished teacher at the Illinois Math and Science Academy, renowned for his
 
 ## Project Co-Head - Dr. Micah E. Fogel
 Distinguished teacher at the Illinois Math and Science Academy, he cannot see.
+
+
+## Project Co-Head - Dr. Michael Woodley
+Distinguished CS126 Prof, known for showing that UIUC > OSU
