@@ -141,15 +141,16 @@
   <ItemGroup>
     <ClInclude Include="Connection.h" />
     <ClInclude Include="Fulkerson.h" />
+    <ClInclude Include="Hazard.h" />
     <ClInclude Include="Map.h" />
-    <ClInclude Include="MapNode.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Truck.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Connection.cpp" />
     <ClCompile Include="Fulkerson.cpp" />
     <ClCompile Include="Map.cpp" />
-    <ClCompile Include="MapNode.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Truck.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
