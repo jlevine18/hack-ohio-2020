@@ -1,13 +1,13 @@
 #pragma once
-#include "MapNode.h"
+#include "Node.h"
 class Connection
 {
 
 public:
-	Connection(MapNode& n1, MapNode& n2, int enviro, int time, int distance, int cost);
+	Connection(Node& n1, Node& n2, int weight);
 private:
-	MapNode* n1_;
-	MapNode* n2_;
+	Node* n1_;
+	Node* n2_;
 	int weight_;
 
 };
