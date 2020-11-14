@@ -22,6 +22,9 @@ public:
 	// Move assignment operator.
 	Map& operator=(Map&& source) noexcept;
 
+	//Gets the smallest spanning tree. Uses Kruskal's algorithm.
+	Map GetMiminimumSpanningTree();
+
 
 private:
 	std::vector<MapNode> nodes;
