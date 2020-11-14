@@ -1,14 +1,15 @@
 #pragma once
-#include "MapNode.h"
 #include "Connection.h"
+#include "Node.h"
 #include <vector>
 class Map
 {
+
 public:
 	Map();
 	void Add_Truck();
-	void Add_Node();
-	void Connect_Nodes();
+	void Add_Node(Node node);
+	void Connect_Nodes(Node& n1, Node& n2, int distance);
 
 	// --- Big 5 ---
 	// Copy constructor.
@@ -27,7 +28,7 @@ public:
 
 
 private:
-	std::vector<MapNode> nodes;
-	std::vector<Connection> connections;
+	std::vector<Node> nodes_;
+	std::vector<Connection> connections_;
 };
 
