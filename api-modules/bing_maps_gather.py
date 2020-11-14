@@ -1,3 +1,7 @@
+__version__ = "0.1"
+__author__ = "Jacob Levine <jlevine4@illinois.edu>"
+__all__ = ["config_avoid_types", "config_material_restrictions", "get_directions"]
+
 import requests
 import datetime
 
