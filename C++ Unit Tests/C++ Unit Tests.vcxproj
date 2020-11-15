@@ -157,6 +157,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="C++ Unit Tests.cpp" />
+    <ClCompile Include="UndirectedWeightedGraphEdge.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="UndirectedWeightedGraph.cpp" />
+    <ClCompile Include="GraphNode.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -165,12 +169,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="UndirectedWeightedGraphEdge.h" />
+    <ClInclude Include="UndirectedWeightedGraph.h" />
+    <ClInclude Include="DisjointSet.h" />
+    <ClInclude Include="GraphNode.h" />
     <ClInclude Include="pch.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\graph-algorithms\graph-algorithms.vcxproj">
-      <Project>{9754f3dd-4a21-43ce-8e3e-af3d5571121c}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
