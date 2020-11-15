@@ -1,4 +1,5 @@
 #pragma once
+
 #include <map>
 template <typename T>
 class DisjointSet
@@ -7,8 +8,8 @@ public:
 	DisjointSet();
 	~DisjointSet();
 	void AddValue(const T& value);
-	T Find(const T& value);
-	bool CheckDisjoint(const T& val1, const T& val2);
+	T Find(const T& value) const;
+	bool CheckDisjoint(const T& val1, const T& val2) const;
 	void Union(const T& val1, const T& val2);
 private:
 	template <typename T>
@@ -26,7 +27,7 @@ private:
 	};
 
 	std::map<T, Node<T>*> nodes;
-	T FindFromNode(Node<T>* node);
+	T FindFromNode(Node<T>* node) const;
 
 };
 
@@ -50,7 +51,7 @@ inline void DisjointSet<T>::AddValue(const T& value)
 }
 
 template<typename T>
-inline T DisjointSet<T>::Find(const T& value)
+inline T DisjointSet<T>::Find(const T& value) const
 {
 	Node<T>* current = nodes.find(value)->second;
 	Node<T>* parent = current->parent;
@@ -63,7 +64,7 @@ inline T DisjointSet<T>::Find(const T& value)
 }
 
 template<typename T>
-inline bool DisjointSet<T>::CheckDisjoint(const T& val1, const T& val2)
+inline bool DisjointSet<T>::CheckDisjoint(const T& val1, const T& val2) const
 {
 	return Find(val1) != Find(val2);
 }
@@ -80,7 +81,7 @@ inline void DisjointSet<T>::Union(const T& val1, const T& val2)
 		if (node_root_1.rank > node_root_2.rank) {
 			node_root_2.parent = &node_root_1;
 		}
-		else if (node_root_2.rank > node_root_1.rank) {
+		else if (node_root_2.rank == node_root_1.rank) {
 			node_root_1.parent = &node_root_2;
 		}
 		else {
@@ -91,7 +92,7 @@ inline void DisjointSet<T>::Union(const T& val1, const T& val2)
 }
 
 template<typename T>
-inline T DisjointSet<T>::FindFromNode(Node<T>* node)
+inline T DisjointSet<T>::FindFromNode(Node<T>* node) const
 {
 	return node->parent == nullptr ? node->value : FindFromNode(node->parent);
 }
