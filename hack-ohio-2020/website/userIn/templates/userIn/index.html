@@ -1,0 +1,15 @@
+<h1>Hello This is WonJun</h1>
+<!--REPLACE THIS WITH REAL HTML-->
+<form method="post">
+    {% csrf_token %}
+    environment : <input type="range" min="0" max="100" value="50" class="slider" id="environment" />
+    time : <input type="range" min="0" max="100" value="50" class="slider" id="time" />
+    distance : <input type="range" min="0" max="100" value="50" class="slider" id="distance" />
+    cost : <input type="range" min="0" max="100" value="50" class="slider" id="cost" />
+    <button type="submit">Submit</button>
+</form>
+
+<h2>environment : {{'e'}}</h2>
+<h2>time : {{t}}</h2>
+<h2>distance : {{d}}</h2>
+<h2>cost: {{c}}</h2>
