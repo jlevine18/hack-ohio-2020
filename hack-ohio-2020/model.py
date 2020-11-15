@@ -2,8 +2,10 @@ import heapq
 from bing_maps_gather import *
 import datetime
 import copy
+from geneticalgorithm import geneticalgorithm as ga
+import numpy as np
 
-api_key = #add here
+api_key = ""  # add here
 
 
 class TruckConfig:
@@ -238,3 +240,50 @@ class RoutingGraphDirected:
             + environmental_weight * total_driving_time
             + cargo_weight * cargo_issues
         )
+
+
+def optimize(
+    graph: RoutingGraphDirected,
+    num_trucks: int,
+    num_routes: int,
+    time_weight: float,
+    environmental_weight: float,
+    distance_weight: float,
+    cargo_weight: float,
+):
+    varbound = np.array([[0, len(graph.vertex_list) - 1]] * num_trucks * num_routes)
+    model = ga(
+        function=lambda X: loss(
+            X,
+            num_trucks,
+            num_routes,
+            graph,
+            time_weight,
+            environmental_weight,
+            distance_weight,
+            cargo_weight,
+        ),
+        dimension=num_trucks * num_routes,
+        variable_type="int",
+        variable_boundaries=varbound,
+    )
+    model.run()
+
+
+def loss(
+    X: np.array,
+    num_trucks: int,
+    num_routes: int,
+    graph: RoutingGraphDirected,
+    time_weight: float,
+    environmental_weight: float,
+    distance_weight: float,
+    cargo_weight: float,
+):
+    graph_optim = copy_constant(graph)
+    for i in range(num_trucks):
+        truck = TruckRoute(X[i : i + num_routes])
+        graph_optim.add_truck(truck)
+    return graph_optim.get_loss(
+        time_weight, environmental_weight, distance_weight, cargo_weight
+    )
