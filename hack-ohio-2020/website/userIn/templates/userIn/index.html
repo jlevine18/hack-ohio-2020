@@ -12,53 +12,113 @@
             <span class="navbar_name">
                 Cycle
             </span>
-        </div>
-        <div class="dropdown">
-            <div class = "addlocbutton">
-                <button class="dropbtn">ADD A LOCATION</button>
-            </div>
-            <div class="dropdown-content">
-                <form action="/" method="post" class="dropdown-content">
-                    <h2 class = "addloc_header">ADD A LOCATION</h2>
-                    <div>
-                        <div class="fieldrow streetname ">
-                            <label for="participant_streetname" class="required">
-                                Street
-                            </label>
-                            <input type="text" id="participant_streetname" name="participant[streetname]" required="required">
+            <div class="dropdown">
+                <ul>
+                    <li class="dropbtn">
+                        <p>ADD A LOCATION</p>
+                        <div class="dropdown-content">
+                            <form method="post">
+                                {% csrf_token %}
+                                <div>
+                                    <div class="textfield">
+                                        <label for="participant_street" class="required">
+                                            Street
+                                        </label>
+                                        <input type="text" id="participant_street" name="participant[street]">
+                                    </div>
+                                    <div class="numfield">
+                                        <label for="participant_zipcode" class="required">
+                                            Zipcode
+                                        </label>
+                                        <input type="number" id="participant_zipcode" name="participant[zipcode]" pattern="\d{4}" title="Prøv postkode, fire tall">
+                                    </div>
+                                    <div class="textfield">
+                                        <label for="participant_state" class="required">
+                                            State
+                                        </label>
+                                        <input type="text" id="participant_state" name="participant[state]">
+                                    </div>
+                                </div>
+                                <input type="submit" value="Register" name="location">
+                            </form>
                         </div>
-                        <div class="fieldrow housenumber " class= "required">
-                            <label for="participant_housenumber">
-                                No.
-                            </label>
-                            <input type="text" id="participant_housenumber" name="participant[housenumber]" maxlength="4" title="Husnummer, maks fire tegn" required="required">
+                    </li>
+
+                    <li class="dropbtn">
+                        <p>TRUCK VARIABLES</p>
+                        <div class="dropdown-content">
+                            <form method="post">
+                                {% csrf_token %}
+                                <ul class="truckvar">
+                                    <li>
+                                        <input type="checkbox" name="combustible" />
+                                        Combustable
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="corrosive" />
+                                        Corrosive
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="explosive" />
+                                        Explosive
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="flammable" />
+                                        Flammable
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="flammable_solid" />
+                                        Flammable Solid
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="gas" />
+                                        Gas
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="water" />
+                                        Water
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="organic" />
+                                        Organic
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="poisonous" />
+                                        Poisonous
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="poisonous_inhalation" />
+                                        Poisonous Inhaled
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="radioactive" />
+                                        Radioactive
+                                    </li>
+                                </ul>
+                                <input type="submit" value="Save" name="truck">
+                            </form>
                         </div>
-                        <div class="fieldrow zipcode ">
-                            <label for="participant_zipcode" class="required">
-                                Zipcode
-                            </label>
-                            <input type="text" id="participant_zipcode" name="participant[zipcode]" required="required" pattern="\d{4}" title="Prøv postkode, fire tall">
-                        </div>
-                        <div class="fieldrow state ">
-                            <label for="participant_state" class="required">
-                                State
-                            </label>
-                            <input type="text" id="participant_state" name="participant[state]" required="required">
-                        </div>
-                        <input type="hidden" id="participant__token" name="participant[_token]" value="Y7ufwXcNKEZgcLmWmXS2W18Wy3kA6UIj3ggTUsnFsH8">
-                    </div>
-                    <input type="submit" value="Register" disabled="true">
-                    </form>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="map">
-
+            <iframe width="800" height="704" frameborder="0" src="https://www.bing.com/maps/embed?h=704&w=800&cp=42.08127813602084~-87.84958203125&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+            </iframe>
         </div>
-        <form method="POST">{% csrf_token %}
+        <div class="stats">
+            <div class="stats_header">Current Model Results</div>
+            <div class="stats_numbers">Trucks used: 13</div>
+            <div class="stats_numbers">Time taken: 5 hours</div>
+            <div class="stats_numbers">Environmental Impact: 3 lbs CO<sub>2</sub></div>
+            <div class="stats_numbers">Cost: 512.39 USD</div>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
             <div class="settings">
                 <p class="settings_header">
                     OPTIMIZATION SETTINGS
-                    <input type="submit" value="Update Weights" class="btn"/>
+                    <input type="submit" value="Update Weights" class="btn" />
                 </p>
                 <div class="settings_type">
                     <p class="settings_text">
@@ -99,10 +159,10 @@
             <span class="description_name">
                 Cycle
             </span>
-            <span class="description_content">
+            <p class="description_content">
                 The trucking industry is an essential part of the supply chain; however, it may be difficult for them to find the best optimized route.
                 Cycle allows distributors to add locations and weigh different options such as cost, time, miles, and the environment and find the best route for them.
-            </span>
+            </p>
         </div>
         <div class="about">
             <div class="about_pancock" , style="background-color:#4F5D75">
@@ -116,7 +176,7 @@
                     I helped work on both backend with the algorithms and also frontend development by helping with CSS.
                 </p>
             </div>
-            <div class="about_pancock", style="background-color:#2D3142">
+            <div class="about_pancock" , style="background-color:#2D3142">
                 <div class="about_pancock_pfp">
                     <img src="{% static 'userIn/My_Friend_Tornado.jpg' %}" alt="Jacob Levine">
                 </div>
@@ -127,7 +187,7 @@
                     I worked on the backend development for this project by using C# and Python to develop algorithms to optimize routes.
                 </p>
             </div>
-            <div class="about_pancock", style="background-color:#4F5D75">
+            <div class="about_pancock" , style="background-color:#4F5D75">
                 <div class="about_pancock_pfp">
                     <img src="{% static 'userIn/My_Friend_Tornado.jpg' %}" alt="Shuchir Bhanage">
                 </div>
@@ -138,7 +198,7 @@
                     I worked around with both backend and frontend.
                 </p>
             </div>
-            <div class="about_pancock", style="background-color:#2D3142">
+            <div class="about_pancock" , style="background-color:#2D3142">
                 <div class="about_pancock_pfp">
                     <img src="{% static 'userIn/My_Friend_Tornado.jpg' %}" alt="Lisa Liu">
                 </div>

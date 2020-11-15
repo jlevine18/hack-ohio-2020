@@ -18,5 +18,6 @@ def index(request):
                'tr':request.POST.get('truck'),
                'c':request.POST.get('cost'),}
     print(context)
+    
 
     return render(request, 'userIn/index.html', context)
