@@ -3,8 +3,40 @@
     padding: 0px !important;
     margin: 0px !important;
 }
+.slidecontainer {
+    margin: auto;
+    width: 90%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
-.v11_55 {
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(196,196,196,1);
+    border-radius: 50%;     
+    cursor: pointer;
+}
+
+.container {
     width: 100%;
     height: 1457px;
     background: rgba(191,192,192,1);
@@ -14,13 +46,14 @@
     left: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    clear: both;
 }
 
 .navbar {
     width: 100%;
-    height: 84px;
+    height: 8%;
     opacity: 1;
-    position: absolute;
+    position: fixed;
     background: rgba(45,49,66,1);
     top: 0px;
     left: 0px;
@@ -39,7 +72,7 @@
     text-align: left;
 }
 
-.v11_79 {
+.navbar_name {
     color: white;
     position: absolute;
     top: 20px;
@@ -51,33 +84,32 @@
     text-align: left;
 }
 
-.v11_74 {
+.map {
     width: 100%;
-    height: 600px;
+    height: 41%;
     background: url("../images/v11_74.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 84px;
-    left: 0px;
+    top: 8%;
     overflow: hidden;
 }
 
-.v11_56 {
+.settings {
     width: 100%;
-    height: 272px;
+    height: 16%;
     background: rgba(79,93,117,1);
     opacity: 1;
     position: absolute;
-    top: 684px;
+    top: 49%;
     left: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
 
-.v11_57 {
+.settings_enviro {
     width: 100%;
     height: 53px;
     background: url("../images/v11_57.png");
@@ -91,23 +123,7 @@
     overflow: hidden;
 }
 
-.v11_58 {
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
-    opacity: 1;
-    position: absolute;
-    top: 7px;
-    left: 50px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-}
-
-.v11_59 {
+.settings_enviro_text {
     width: 100%;
     color: rgba(255,255,255,1);
     position: absolute;
@@ -119,19 +135,7 @@
     text-align: center;
 }
 
-.v11_60 {
-    width: 25px;
-    height: 25px;
-    background: rgba(196,196,196,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 250px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.v11_61 {
+.settings_time {
     width: 100%;
     height: 53px;
     background: url("../images/v11_61.png");
@@ -145,23 +149,7 @@
     overflow: hidden;
 }
 
-.v11_62 {
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
-    opacity: 1;
-    position: absolute;
-    top: 7px;
-    left: 50px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-}
-
-.v11_63 {
+.settings_time_text {
     width: 100%;
     color: rgba(255,255,255,1);
     position: absolute;
@@ -173,19 +161,7 @@
     text-align: center;
 }
 
-.v11_64 {
-    width: 25px;
-    height: 25px;
-    background: rgba(196,196,196,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 700px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.v11_65 {
+.settings_cost {
     width: 100%;
     height: 53px;
     background: url("../images/v11_65.png");
@@ -199,23 +175,7 @@
     overflow: hidden;
 }
 
-.v11_66 {
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
-    opacity: 1;
-    position: absolute;
-    top: 7px;
-    left: 50px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-}
-
-.v11_67 {
+.settings_cost_text {
     width: 100%;
     color: rgba(255,255,255,1);
     position: absolute;
@@ -227,19 +187,7 @@
     text-align: center;
 }
 
-.v11_68 {
-    width: 25px;
-    height: 25px;
-    background: rgba(196,196,196,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 325px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.v11_69 {
+.settings_miles {
     width: 100%;
     height: 53px;
     background: url("../images/v11_69.png");
@@ -253,23 +201,7 @@
     overflow: hidden;
 }
 
-.v11_70 {
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
-    opacity: 1;
-    position: absolute;
-    top: 7px;
-    left: 50px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-}
-
-.v11_71 {
+.settings_miles_text {
     width: 100%;
     color: rgba(255,255,255,1);
     position: absolute;
@@ -281,19 +213,7 @@
     text-align: center;
 }
 
-.v11_72 {
-    width: 25px;
-    height: 25px;
-    background: rgba(196,196,196,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.v11_73 {
+.settings_header {
     width: 100%;
     color: rgba(255,255,255,1);
     position: absolute;
@@ -303,22 +223,22 @@
     text-align: center;
 }
 
-.v11_80 {
+.description {
     width: 100%;
-    height: 238px;
+    height: 16%;
     background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
     opacity: 1;
     position: absolute;
-    top: 956px;
+    top: 65%;
     left: 0px;
     overflow: hidden;
 }
 
-.v11_120 {
+.description_content {
     width: 100%;
     color: rgba(255,255,255,1);
     position: absolute;
-    top: 24px;
+    top: 50px;
     left: 50px;
     font-family: Roboto;
     font-weight: Bold;
@@ -327,7 +247,7 @@
     text-align: left;
 }
 
-.v11_117 {
+.description_name {
     width: 100%;
     color: rgba(255,255,255,1);
     position: absolute;
@@ -340,32 +260,32 @@
     text-align: center;
 }
 
-.v11_115 {
+.about {
     width: 100%;
-    height: 263px;
+    height: 19%;
     background: url("../images/v11_115.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 1194px;
+    top: 81%;
     left: 0px;
     overflow: hidden;
+    clear: both;
 }
 
-.v46_2 {
-    width: 350px;
-    height: 263px;
-    background: rgba(79,93,117,1);
+.about_pancock {
+    width: 25%;
+    height: 100%;
     opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 1050px;
     overflow: hidden;
+    float: left;
+    text-align: center;
+    margin: auto;
 }
 
-.v46_3 {
+.about_pancock_pfp {
     width: 75px;
     height: 75px;
     background: url("../images/v46_3.png");
@@ -375,12 +295,10 @@
     left: 137px;
 }
 
-.v46_4 {
-    width: 350px;
+.about_pancock_name {
     color: rgba(255,255,255,1);
     position: absolute;
-    top: 95px;
-    left: 0px;
+    top: 30%;
     font-family: Roboto;
     font-weight: Bold;
     font-size: 18px;
@@ -388,153 +306,10 @@
     text-align: center;
 }
 
-.v46_5 {
-    width: 350px;
+.about_pancock_description {
     color: rgba(255,255,255,1);
     position: absolute;
-    top: 143px;
-    left: 0px;
-    font-family: Roboto;
-    font-weight: Bold;
-    font-size: 12px;
-    opacity: 1;
-    text-align: center;
-}
-
-.v43_3 {
-    width: 350px;
-    height: 263px;
-    background: rgba(45,49,66,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 700px;
-    overflow: hidden;
-}
-
-.v43_4 {
-    width: 75px;
-    height: 75px;
-    background: url("../images/v43_4.png");
-    opacity: 1;
-    position: absolute;
-    top: 8px;
-    left: 137px;
-}
-
-.v43_5 {
-    width: 350px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 95px;
-    left: 0px;
-    font-family: Roboto;
-    font-weight: Bold;
-    font-size: 18px;
-    opacity: 1;
-    text-align: center;
-}
-
-.v43_6 {
-    width: 350px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 143px;
-    left: 0px;
-    font-family: Roboto;
-    font-weight: Bold;
-    font-size: 12px;
-    opacity: 1;
-    text-align: center;
-}
-
-.v11_130 {
-    width: 350px;
-    height: 263px;
-    background: rgba(79,93,117,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 350px;
-    overflow: hidden;
-}
-
-.v11_135 {
-    width: 75px;
-    height: 75px;
-    background: url("../images/v11_135.png");
-    opacity: 1;
-    position: absolute;
-    top: 8px;
-    left: 137px;
-}
-
-.v11_140 {
-    width: 350px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 95px;
-    left: 0px;
-    font-family: Roboto;
-    font-weight: Bold;
-    font-size: 18px;
-    opacity: 1;
-    text-align: center;
-}
-
-.v11_146 {
-    width: 350px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 143px;
-    left: 0px;
-    font-family: Roboto;
-    font-weight: Bold;
-    font-size: 12px;
-    opacity: 1;
-    text-align: center;
-}
-
-.v11_128 {
-    width: 350px;
-    height: 263px;
-    background: rgba(45,49,66,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-}
-
-.v11_134 {
-    width: 75px;
-    height: 75px;
-    background: url("../images/v11_134.png");
-    opacity: 1;
-    position: absolute;
-    top: 8px;
-    left: 137px;
-}
-
-.v11_139 {
-    width: 350px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 95px;
-    left: 0px;
-    font-family: Roboto;
-    font-weight: Bold;
-    font-size: 18px;
-    opacity: 1;
-    text-align: center;
-}
-
-.v11_143 {
-    width: 350px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 143px;
-    left: 0px;
+    top: 45%;
     font-family: Roboto;
     font-weight: Bold;
     font-size: 12px;
