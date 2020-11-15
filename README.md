@@ -1,13 +1,7 @@
-# hack-ohio-2020
-## Project Co-Head - Dr. Peter J. Dong
-Distinguished teacher at the Illinois Math and Science Academy, renowned for his work in "I teach highschoolers for fun" and "Isn't this cool?!"
+# Cycle
+The trucking industry is an essential part of the supply chain; however, it may be difficult for them to find the best optimized route. Cycle allows distributors to add locations and weigh different options such as cost, time, miles, and the environment and find the best route for them.
 
-## Project Co-Head - Dr. Micah E. Fogel
-Distinguished teacher at the Illinois Math and Science Academy, he cannot see.
+Cycle uses the Django webframework and runs its backend algorithms in c++. It uses an implementation of kruskal's algorithm to find a minimum spanning tree between the different destinations and improves further with a genetic algorithm with a loss function based on cost, time, miles, and the environmnet weights.
 
-
-## Project Co-Head - Dr. Michael Woodley
-Distinguished CS126 Prof, known for showing that UIUC > OSU
-
-## Project Co-Head - Mr. Louis Rossmann
-Distinguished Macbook Repairman, because something always goes wrong during a hackathon
+## The developers
+Cycle's developers are WonJun Park, Jacob Levine, Shuchir Bhanage, and Lisa Liu. We all attend the University of Illinois at Urbana-Champaign as freshman Computer Science majors.
