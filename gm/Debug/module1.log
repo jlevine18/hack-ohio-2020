@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (module1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  DisjointSet.cpp
+  GraphNode.cpp
+  UndirectedWeightedGraph.cpp
+  UndirectedWeightedGraphEdge.cpp
+  Generating Code...
+     Creating library C:\Users\jlevi\source\repos\hack-ohio-2020\Debug\module1.lib and object C:\Users\jlevi\source\repos\hack-ohio-2020\Debug\module1.exp
+  module1.vcxproj -> C:\Users\jlevi\source\repos\hack-ohio-2020\Debug\module1.pyd

@@ -9,12 +9,47 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <span class="addloc">
-                ADD A LOCATION
-            </span>
             <span class="navbar_name">
                 Cycle
             </span>
+        </div>
+        <div class="dropdown">
+            <div class = "addlocbutton">
+                <button class="dropbtn">ADD A LOCATION</button>
+            </div>
+            <div class="dropdown-content">
+                <form action="/" method="post" class="dropdown-content">
+                    <h2 class = "addloc_header">ADD A LOCATION</h2>
+                    <div>
+                        <div class="fieldrow streetname ">
+                            <label for="participant_streetname" class="required">
+                                Street
+                            </label>
+                            <input type="text" id="participant_streetname" name="participant[streetname]" required="required">
+                        </div>
+                        <div class="fieldrow housenumber " class= "required">
+                            <label for="participant_housenumber">
+                                No.
+                            </label>
+                            <input type="text" id="participant_housenumber" name="participant[housenumber]" maxlength="4" title="Husnummer, maks fire tegn" required="required">
+                        </div>
+                        <div class="fieldrow zipcode ">
+                            <label for="participant_zipcode" class="required">
+                                Zipcode
+                            </label>
+                            <input type="text" id="participant_zipcode" name="participant[zipcode]" required="required" pattern="\d{4}" title="Prøv postkode, fire tall">
+                        </div>
+                        <div class="fieldrow state ">
+                            <label for="participant_state" class="required">
+                                State
+                            </label>
+                            <input type="text" id="participant_state" name="participant[state]" required="required">
+                        </div>
+                        <input type="hidden" id="participant__token" name="participant[_token]" value="Y7ufwXcNKEZgcLmWmXS2W18Wy3kA6UIj3ggTUsnFsH8">
+                    </div>
+                    <input type="submit" value="Register" disabled="true">
+                    </form>
+            </div>
         </div>
         <div class="map">
 

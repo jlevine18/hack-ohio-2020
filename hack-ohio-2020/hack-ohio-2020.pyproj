@@ -25,6 +25,9 @@
     <Compile Include="bing_maps_api_gather\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bing_maps_api_gather\" />

@@ -1,0 +1,13 @@
+﻿  DisjointSet.cpp
+  GraphNode.cpp
+  Graph_Modules.cpp
+  UndirectedWeightedGraph.cpp
+  UndirectedWeightedGraphEdge.cpp
+  Running Code Analysis for C/C++...
+     Creating library C:\Users\jlevi\source\repos\hack-ohio-2020\Release\Graph_Modules.lib and object C:\Users\jlevi\source\repos\hack-ohio-2020\Release\Graph_Modules.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 762 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Graph Modules.vcxproj -> C:\Users\jlevi\source\repos\hack-ohio-2020\Release\Graph_Modules.pyd
+C:\Users\jlevi\source\repos\hack-ohio-2020\Graph Modules\Graph_Modules.cpp(10): warning C26495: Variable 'Graph::ob_base' is uninitialized. Always initialize a member variable (type.6).

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jlevi\source\repos\hack-ohio-2020\Graph Modules\</FILEPATH>
+      <FILENAME>Graph_Modules.cpp</FILENAME>
+      <LINE>10</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Graph::ob_base' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Graph::{ctor}</FUNCTION>
+    <DECORATED>??0Graph@@QAE@XZ</DECORATED>
+    <FUNCLINE>10</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Graph::ob_base</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>
