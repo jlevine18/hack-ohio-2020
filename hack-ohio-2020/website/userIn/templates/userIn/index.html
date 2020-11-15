@@ -1,15 +1,648 @@
-<h1>Hello This is WonJun</h1>
-<!--REPLACE THIS WITH REAL HTML-->
-<form method="post">
-    {% csrf_token %}
-    environment : <input type="range" min="0" max="100" value="50" class="slider" id="environment" />
-    time : <input type="range" min="0" max="100" value="50" class="slider" id="time" />
-    distance : <input type="range" min="0" max="100" value="50" class="slider" id="distance" />
-    cost : <input type="range" min="0" max="100" value="50" class="slider" id="cost" />
-    <button type="submit">Submit</button>
-</form>
 
-<h2>environment : {{'e'}}</h2>
-<h2>time : {{t}}</h2>
-<h2>distance : {{d}}</h2>
-<h2>cost: {{c}}</h2>
+<!DOCTYPE html><html>
+    <head>
+        <style>
+            * {
+  overflow-x: hidden;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.v11_55 {
+  width: 100%;
+  height: 1457px;
+  background: rgba(191,192,192,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v11_76 {
+  width: 100%;
+  height: 84px;
+  background: url("../images/v11_76.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_77 {
+  width: 100%;
+  height: 84px;
+  background: rgba(45,49,66,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_78 {
+  width: 205px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 18px;
+  left: 1195px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v11_79 {
+  width: 225px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 18px;
+  left: 71px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+.v11_74 {
+  width: 100%;
+  height: 600px;
+  background: url("../images/v11_74.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 84px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_56 {
+  width: 100%;
+  height: 272px;
+  background: rgba(79,93,117,1);
+  opacity: 1;
+  position: absolute;
+  top: 684px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v11_57 {
+  width: 100%;
+  height: 53px;
+  background: url("../images/v11_57.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 213px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_58 {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v11_59 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  opacity: 1;
+  text-align: center;
+}
+.v11_60 {
+  width: 25px;
+  height: 25px;
+  background: rgba(196,196,196,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.v11_61 {
+  width: 100%;
+  height: 53px;
+  background: url("../images/v11_61.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_62 {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v11_63 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  opacity: 1;
+  text-align: center;
+}
+.v11_64 {
+  width: 25px;
+  height: 25px;
+  background: rgba(196,196,196,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 700px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.v11_65 {
+  width: 100%;
+  height: 53px;
+  background: url("../images/v11_65.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 107px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_66 {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v11_67 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  opacity: 1;
+  text-align: center;
+}
+.v11_68 {
+  width: 25px;
+  height: 25px;
+  background: rgba(196,196,196,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 325px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.v11_69 {
+  width: 100%;
+  height: 53px;
+  background: url("../images/v11_69.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 54px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_70 {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v11_71 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  opacity: 1;
+  text-align: center;
+}
+.v11_72 {
+  width: 25px;
+  height: 25px;
+  background: rgba(196,196,196,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.v11_73 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  opacity: 1;
+  text-align: center;
+}
+.v11_80 {
+  width: 100%;
+  height: 238px;
+  background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+  opacity: 1;
+  position: absolute;
+  top: 956px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_120 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 24px;
+  left: 50px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+.v11_117 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 14px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v11_115 {
+  width: 100%;
+  height: 263px;
+  background: url("../images/v11_115.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1194px;
+  left: 0px;
+  overflow: hidden;
+}
+.v46_2 {
+  width: 350px;
+  height: 263px;
+  background: rgba(79,93,117,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 1050px;
+  overflow: hidden;
+}
+.v46_3 {
+  width: 75px;
+  height: 75px;
+  background: url("../images/v46_3.png");
+  opacity: 1;
+  position: absolute;
+  top: 13px;
+  left: 137px;
+}
+.v46_4 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+}
+.v46_5 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 143px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v43_3 {
+  width: 350px;
+  height: 263px;
+  background: rgba(45,49,66,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 700px;
+  overflow: hidden;
+}
+.v43_4 {
+  width: 75px;
+  height: 75px;
+  background: url("../images/v43_4.png");
+  opacity: 1;
+  position: absolute;
+  top: 8px;
+  left: 137px;
+}
+.v43_5 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+}
+.v43_6 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 143px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v11_130 {
+  width: 350px;
+  height: 263px;
+  background: rgba(79,93,117,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  overflow: hidden;
+}
+.v11_135 {
+  width: 75px;
+  height: 75px;
+  background: url("../images/v11_135.png");
+  opacity: 1;
+  position: absolute;
+  top: 8px;
+  left: 137px;
+}
+.v11_140 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+}
+.v11_146 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 143px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v11_128 {
+  width: 350px;
+  height: 263px;
+  background: rgba(45,49,66,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v11_134 {
+  width: 75px;
+  height: 75px;
+  background: url("../images/v11_134.png");
+  opacity: 1;
+  position: absolute;
+  top: 8px;
+  left: 137px;
+}
+.v11_139 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+}
+.v11_143 {
+  width: 350px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 143px;
+  left: 0px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="./main.css" rel="stylesheet" />
+        <title>Document</title>
+        <link href="./main.css" rel="stylesheet" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="v11_55">
+            <div class="v11_76">
+                <div class="v11_77">
+
+                </div>
+                <span class="v11_78">
+                    ADD A LOCATION
+                </span>
+                <span class="v11_79">
+                    ProjectName
+                </span>
+            </div>
+            <div class="v11_74">
+
+            </div>
+            <div class="v11_56">
+                <div class="v11_57">
+                    <div class="v11_58">
+
+                    </div>
+                    <span class="v11_59">
+                        ENVIRONMENT Check here if you want to optimize environment 
+                    </span>
+                    <div class="v11_60">
+                        
+                    </div>
+                </div>
+                <div class="v11_61">
+                    <div class="v11_62">
+
+                    </div>
+                    <span class="v11_63">
+                        TIME Check here if you want to optimize time 
+                    </span>
+                    <div class="v11_64">
+
+                    </div>
+                </div>
+                <div class="v11_65">
+                    <div class="v11_66">
+
+                    </div>
+                    <span class="v11_67">
+                        COST Check here if you want to optimize cost
+                    </span>
+                    <div class="v11_68">
+
+                    </div>
+                </div>
+                <div class="v11_69">
+                    <div class="v11_70">
+
+                    </div>
+                    <span class="v11_71">
+                        MILES Check here if you want to optimize miles 
+                    </span>
+                    <div class="v11_72">
+
+                    </div>
+                </div>
+                <span class="v11_73">
+                    OPTIMIZATION SETTINGS
+                    Use the sliders to declare the optimzization of each variable.
+                </span>
+            </div>
+            <div class="v11_80">
+                <span class="v11_117">
+                    ProjectName
+                </span>
+                <span class="v11_120">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </span>
+            </div>
+            <div class="v11_115">
+                <div class="v43_3">
+                    <div class="v43_4">
+
+                    </div><span class="v43_5">
+                        WONJUN PARK
+                    </span>
+                    <span class="v43_6">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </span>
+                </div>
+                <div class="v11_130">
+                    <div class="v11_135">
+
+                    </div><span class="v11_140">
+                        JACOB LEVINE
+                    </span>
+                    <span class="v11_146">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </span>
+                </div>
+                <div class="v46_2">
+                    <div class="v46_3">
+
+                    </div>
+                    <span class="v46_4">
+                        SHUCHIR BHANAGE
+                    </span>
+                    <span class="v46_5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </span>
+                </div>
+                <div class="v11_128">
+                    <div class="v11_134">
+
+                    </div><span class="v11_139">
+                        LISA LIU
+                    </span>
+                    <span class="v11_143">
+                        Worked on the frontend and the GUI. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
