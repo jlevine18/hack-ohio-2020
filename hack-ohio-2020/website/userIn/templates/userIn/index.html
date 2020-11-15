@@ -19,47 +19,47 @@
         <div class="map">
 
         </div>
-        <form>
-
+        <form method="POST">{% csrf_token %}
+            <div class="settings">
+                <p class="settings_header">
+                    OPTIMIZATION SETTINGS
+                    <input type="submit" value="Update Weights" class="btn"/>
+                </p>
+                <div class="settings_type">
+                    <p class="settings_text">
+                        ENVIRONMENT : Adjust weight on environmental impact (Higher value = Focused on reducing emmisions)
+                    </p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value={{e}} class="slider" name="enviro">
+                    </div>
+                </div>
+                <div class="settings_type">
+                    <p class="settings_text">
+                        TIME : Adjust weight on time saved (Higher value = Save time)
+                    </p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value={{ti}} class="slider" name="time">
+                    </div>
+                </div>
+                <div class="settings_type">
+                    <p class="settings_text">
+                        COST : Adjust weight on cost (Higher value = reduce expenses)
+                    </p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value={{c}} class="slider" name="cost">
+                    </div>
+                </div>
+                <div class="settings_type">
+                    <p class="settings_text">
+                        TRUCKS : Adjust weight on trucks (Higher value = reduce number of trucks sent)
+                    </p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value={{tr}} class="slider" name="truck">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Update Weights" />
         </form>
-        <div class="settings">
-            <p class="settings_header">
-                OPTIMIZATION SETTINGS
-                Use the sliders to declare the optimzization of each variable.
-            </p>
-            <div class="settings_type">
-                <p class="settings_text">
-                    ENVIRONMENT : Adjust weight on environmental impact (Higher value = Focused on reducing emmisions)
-                </p>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </div>
-            <div class="settings_type">
-                <p class="settings_text">
-                    TIME : Adjust weight on time saved (Higher value = Save time)
-                </p>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </div>
-            <div class="settings_type">
-                <p class="settings_text">
-                    COST : Adjust weight on cost (Higher value = reduce expenses)
-                </p>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </div>
-            <div class="settings_type">
-                <p class="settings_text">
-                    TRUCKS : Adjust weight on trucks (Higher value = reduce number of trucks sent)
-                </p>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </div>
-        </div>
         <div class="description">
             <span class="description_name">
                 Cycle
