@@ -1,0 +1,5 @@
+﻿  Graph Unit Tests.cpp
+     Creating library C:\Users\jlevi\source\repos\hack-ohio-2020\Debug\Graph Unit Tests.lib and object C:\Users\jlevi\source\repos\hack-ohio-2020\Debug\Graph Unit Tests.exp
+Graph Unit Tests.obj : error LNK2019: unresolved external symbol "public: __thiscall UndirectedWeightedGraph::UndirectedWeightedGraph(void)" (??0UndirectedWeightedGraph@@QAE@XZ) referenced in function "public: void __thiscall CUnitTests::TestGraph::GraphInit(void)" (?GraphInit@TestGraph@CUnitTests@@QAEXXZ)
+Graph Unit Tests.obj : error LNK2019: unresolved external symbol "public: __thiscall UndirectedWeightedGraph::~UndirectedWeightedGraph(void)" (??1UndirectedWeightedGraph@@QAE@XZ) referenced in function "public: void __thiscall CUnitTests::TestGraph::GraphInit(void)" (?GraphInit@TestGraph@CUnitTests@@QAEXXZ)
+C:\Users\jlevi\source\repos\hack-ohio-2020\Debug\Graph Unit Tests.dll : fatal error LNK1120: 2 unresolved externals
