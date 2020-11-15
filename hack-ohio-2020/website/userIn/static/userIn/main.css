@@ -316,7 +316,7 @@ ul {
     background: rgba(45,49,66,1);
     height: 200px;
     overflow: visible;
-    position: absolute;
+    position: relative;
     z-index: 2;
 }
 
