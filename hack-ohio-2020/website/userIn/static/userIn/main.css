@@ -1,7 +1,12 @@
 * {
     overflow-x: hidden;
-    padding: 0px !important;
-    margin: 0px !important;
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
 }
 .slidecontainer {
     margin: auto;
@@ -272,7 +277,9 @@
     top: 81%;
     left: 0px;
     overflow: hidden;
-    clear: both;
+    clear: left;
+    display: table;
+    content: "";
 }
 
 .about_pancock {
@@ -281,24 +288,21 @@
     opacity: 1;
     overflow: hidden;
     float: left;
-    text-align: center;
-    margin: auto;
+    text-align:center;
 }
 
 .about_pancock_pfp {
-    width: 75px;
-    height: 75px;
-    background: url("../images/v46_3.png");
+    width: 20%;
+    height: auto;
     opacity: 1;
-    position: absolute;
-    top: 13px;
-    left: 137px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about_pancock_name {
     color: rgba(255,255,255,1);
-    position: absolute;
-    top: 30%;
+    background-color: blue;
     font-family: Roboto;
     font-weight: Bold;
     font-size: 18px;
@@ -308,8 +312,7 @@
 
 .about_pancock_description {
     color: rgba(255,255,255,1);
-    position: absolute;
-    top: 45%;
+    background-color: blue;
     font-family: Roboto;
     font-weight: Bold;
     font-size: 12px;
