@@ -1,5 +1,0 @@
-﻿GraphNode.obj : error LNK2019: unresolved external symbol __imp___invalid_parameter referenced in function "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned int)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z)
-UndirectedWeightedGraph.obj : error LNK2001: unresolved external symbol __imp___invalid_parameter
-GraphNode.obj : error LNK2019: unresolved external symbol __imp___CrtDbgReport referenced in function "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned int)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z)
-UndirectedWeightedGraph.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReport
-C:\Users\jlevi\source\repos\hack-ohio-2020\Debug\graph-algorithms.pyd : fatal error LNK1120: 2 unresolved externals
