@@ -1,0 +1,231 @@
+* {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+.slidecontainer {
+    margin: auto;
+    width: 90%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(196,196,196,1);
+    border-radius: 5px;     
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 1457px;
+    background: rgba(191,192,192,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    clear: both;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    opacity: 1;
+    position: fixed;
+    background: rgba(45,49,66,1);
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.addloc {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.navbar_name {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 36px;
+    opacity: 1;
+    text-align: left;
+}
+
+.map {
+    width: 100%;
+    height: 41%;
+    background: url("../images/v11_74.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 8%;
+    overflow: hidden;
+}
+
+.settings {
+    width: 100%;
+    height: 19%;
+    background: rgba(79,93,117,1);
+    opacity: 1;
+    position: absolute;
+    top: 49%;
+    left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.settings_type {
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.settings_text {
+    width: 100%;
+    color: white;
+    font-family: Roboto;
+    font-weight: Bold;
+    opacity: 1;
+    text-align: center;
+}
+
+.settings_header {
+    width: 100%;
+    color: rgba(255,255,255,1);
+    opacity: 1;
+    text-align: center;
+    font-size:24pt;
+    margin: 20px;
+}
+
+.description {
+    width: 100%;
+    height: 16%;
+    background: linear-gradient(rgba(239,131,84,1), rgba(221,94,152,1));
+    opacity: 1;
+    position: absolute;
+    top: 68%;
+    left: 0px;
+    overflow: hidden;
+}
+
+.description_content {
+    width: 100%;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.description_name {
+    width: 100%;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.about {
+    width: 100%;
+    height: 16%;
+    background: url("../images/v11_115.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 84%;
+    left: 0px;
+    overflow: hidden;
+    clear: left;
+    display: table;
+    content: "";
+}
+
+.about_pancock {
+    width: 25%;
+    height: 100%;
+    opacity: 1;
+    overflow: hidden;
+    float: left;
+    text-align:center;
+}
+
+.about_pancock_pfp {
+    width: 20%;
+    height: auto;
+    opacity: 1;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_pancock_name {
+    color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+.about_pancock_description {
+    color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}

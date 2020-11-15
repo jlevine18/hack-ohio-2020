@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static '/userIn/main.css' %}" media="screen" />
+    <title>Project Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <span class="addloc">
+                ADD A LOCATION
+            </span>
+            <span class="navbar_name">
+                Cycle
+            </span>
+        </div>
+        <div class="map">
+
+        </div>
+        <form>
+
+        </form>
+        <div class="settings">
+            <p class="settings_header">
+                OPTIMIZATION SETTINGS
+                Use the sliders to declare the optimzization of each variable.
+            </p>
+            <div class="settings_type">
+                <p class="settings_text">
+                    ENVIRONMENT : Adjust weight on environmental impact (Higher value = Focused on reducing emmisions)
+                </p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="settings_type">
+                <p class="settings_text">
+                    TIME : Adjust weight on time saved (Higher value = Save time)
+                </p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="settings_type">
+                <p class="settings_text">
+                    COST : Adjust weight on cost (Higher value = reduce expenses)
+                </p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="settings_type">
+                <p class="settings_text">
+                    TRUCKS : Adjust weight on trucks (Higher value = reduce number of trucks sent)
+                </p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <span class="description_name">
+                Cycle
+            </span>
+            <span class="description_content">
+                The trucking industry is an essential part of the supply chain; however, it may be difficult for them to find the best optimized route.
+                Cycle allows distributors to add locations and weigh different options such as cost, time, miles, and the environment and find the best route for them.
+            </span>
+        </div>
+        <div class="about">
+            <div class="about_pancock" , style="background-color:#4F5D75">
+                <div class="about_pancock_pfp">
+                    <img src="{% static 'userIn/My_Friend_Tornado.jpg' %}" alt="WonJun Park">
+                </div>
+                <p class="about_pancock_name">
+                    WONJUN PARK
+                </p>
+                <p class="about_pancock_description">
+                    I helped work on both backend with the algorithms and also frontend development by helping with CSS.
+                </p>
+            </div>
+            <div class="about_pancock", style="background-color:#2D3142">
+                <div class="about_pancock_pfp">
+                    <img src="{% static 'userIn/My_Friend_Tornado.jpg' %}" alt="Jacob Levine">
+                </div>
+                <p class="about_pancock_name">
+                    JACOB LEVINE
+                </p>
+                <p class="about_pancock_description">
+                    I worked on the backend development for this project by using C# and Python to develop algorithms to optimize routes.
+                </p>
+            </div>
+            <div class="about_pancock", style="background-color:#4F5D75">
+                <div class="about_pancock_pfp">
+                    <img src="{% static 'userIn/My_Friend_Tornado.jpg' %}" alt="Shuchir Bhanage">
+                </div>
+                <p class="about_pancock_name">
+                    SHUCHIR BHANAGE
+                </p>
+                <p class="about_pancock_description">
+                    I worked around with both backend and frontend.
+                </p>
+            </div>
+            <div class="about_pancock", style="background-color:#2D3142">
+                <div class="about_pancock_pfp">
+                    <img src="{% static 'userIn/My_Friend_Tornado.jpg' %}" alt="Lisa Liu">
+                </div>
+                <p class="about_pancock_name">
+                    LISA LIU
+                </p>
+                <p class="about_pancock_description">
+                    Worked on the frontend and the GUI. I used Figma to prototype a design the webpages and then converted it into HTML and CSS on Django.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
